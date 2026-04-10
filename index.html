@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle阅读站</title>
+    <style>
+        /* 专为Kindle墨水屏优化 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+            font-size: 22px;          /* Kindle最佳阅读字号 */
+            line-height: 1.8;         /* 宽松行距，墨水屏不疲劳 */
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            color: #000;
+            background: #fff;
+        }
+        
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            border-left: 4px solid #000;
+            padding-left: 10px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            text-align: justify;      /* 两端对齐，Kindle上更整齐 */
+        }
+        
+        a {
+            color: #000;
+            text-decoration: underline;
+            border-bottom: 1px solid #666;
+        }
+        
+        a:hover {
+            background: #eee;
+        }
+        
+        /* 文章列表 */
+        .article-list {
+            list-style: none;
+        }
+        
+        .article-list li {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px dashed #999;
+        }
+        
+        .date {
+            font-size: 16px;
+            color: #666;
+            margin-right: 10px;
+        }
+        
+        /* 纯文本模式切换（Kindle用户可选） */
+        .text-only {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 我的Kindle阅读站</h1>
+    
+    <p>这是一个专为Kindle电子墨水屏优化的极简网站。无JavaScript，无复杂样式，加载极速，阅读舒适。</p>
+    
+    <h2>最新文章</h2>
+    <ul class="article-list">
+        <li>
+            <span class="date">2026-04-10</span>
+            <a href="post1.html">如何搭建Kindle友好的网站</a>
+        </li>
+        <li>
+            <span class="date">2026-04-09</span>
+            <a href="post2.html">墨水屏阅读技巧分享</a>
+        </li>
+    </ul>
+    
+    <h2>常用链接</h2>
+    <p>
+        <a href="https://zh.wikipedia.org/wiki/Special:MobileMenu">维基百科</a> | 
+        <a href="https://www.gutenberg.org">古腾堡计划</a> | 
+        <a href="https://news.ycombinator.com">Hacker News</a>
+    </p>
+    
+    <div class="text-only">
+        <p>提示：Kindle用户建议开启"强制纯文本模式"以获得最佳体验。</p>
+    </div>
+</body>
+</html>
